@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Dear Diary</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section class="header">
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <a href="web.html">
+                <img src="phone.png"></a>
+            </div>
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='web.html'>Home</a></li>
+                    <li><a href='web.html'>Category</a></li>
+                    <li><a href='web.html'>About Us</a></li>
+                    <li><a href='web.html'>Contact</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block' "style="width:auto;">Login</button></li>
+                </ul>
+            </nav>
+        </div>
+            <!-- form box-->
+            <div id='login-form' class='login-page'>
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                </div>
+                <!-- login form -->
+                <form id='login' class='input-group-login'>
+                    <input type='text'class='input-field'placeholder='Email Id'required>
+                    <input type='password'class='input-field'placeholder='Enter Password'required>
+                    <input type='checkbox'class='check-box'><span id='box'>Remember Password</span>
+                    <button type='submit'class='submit-btn'>Log in</button>
+                </form>
+                <!-- register form -->
+                <form id='register' class='input-group-register'>
+                    <input type='text'class='input-field'placeholder='First Name'required>
+                    <input type='text'class='input-field'placeholder='Last Name'required>
+                    <input type='email'class='input-field'placeholder='Email Id'required>
+                    <input type='password'class='input-field'placeholder='Enter Password'required>
+                    <input type='password'class='input-field'placeholder='Confirm Password'required>
+                    <input type='checkbox'class='check-box'><span id='box'>I agree to the terms and conditions</span>
+                    <button type='submit'class='submit-btn'>Register</button>
+                </form>
+            </div>
+    </div>
+        <script>
+            var x=document.getElementById('login');
+            var y=document.getElementById('register');
+            var z=document.getElementById('btn');
+            function register()
+            {
+                x.style.left='-400px';
+                y.style.left='50px';
+                z.style.left='110px';
+            }
+            function login()
+            {
+                x.style.left='50px';
+                y.style.left='450px';
+                z.style.left='0px';
+            }
+             // function diatas berfungsi untuk membuka form login dan register
+        </script>
+        <script>
+            var modal = document.getElementById('login-form');
+            window.onclick = function(event)
+            {
+                if(event.target ==modal)
+                {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </section>
+
+<!-- blog page content -->
+
+<section class="blog-content">
+    <h1>^Welcome to Dear Diary^</h1>
+    <div class="row">
+        <div class="blog-left">
+            
+            <h2>My First Lesson In 2022 March 24th </h2>
+            <h5>Website</h5>
+            <p>Hi guys, this is my first day starting to be productive for 2 weeks later, 
+                I can't wait for the results xoxo wish me luck guys:) 
+                so for the first lesson I started by learning website like make a navbar and etc.</p>
+                <br>
+            <h2>My 2<sup>nd</sup> Lesson In 2022 March 25th </h2>
+            <h5>Design</h5>
+            <p>hellow guys for today let's move to design, so I've learned about the basics of design, I mean it's very basic guys 
+                but start with small things first right? such as making flat shapes and so on. Keep up the spirit!!!</p>
+                <br>
+             <h2>My 3<sup>rd</sup> Lesson In 2022 March 26th </h2>
+            <h5>English</h5>
+            <p>Hi guys, Today I've learned about my favorite subject is English, So I learn new vocab through movie music and etc
+                and also practice my pronunciation. Just it for today babaay!</p>
+                <br>
+            <h2>My 4<sup>th</sup> Lesson In 2022 March 27th </h2>
+            <h5>Korean</h5>
+            <p>hi hi hi Today I'm learning a new language, Korean. why am i learning this language? because I like watching Korean dramas 
+                it seems fun if I know their language so I learn the letters of the alphabet first which is Hangul. </p>
+                <br>
+            <h2>My 5<sup>th</sup> Lesson In 2022 March 28th </h2>
+            <h5>Website</h5>
+            <p>Hi guys, back to the main lesson that is Website:') so for today I've learn how to make a basic Form and then
+               editing the text, colors and so on using css and bootstrap yeayy!!!</p>
+                <br>
+            <h2>My 6<sup>th</sup> Lesson In 2022 March 29th </h2>
+            <h5>Design</h5>
+            <p>Don't be bored okay? cuz today I've learn one of my favorite lesson after English is Design even though I'm new bie:) 
+                then I learn about colors and my favorit is pastel colors</p>
+                <br>
+            <h2>My 7<sup>th</sup> Lesson In 2022 March 30th </h2>
+            <h5>English</h5>
+            <p>Hi guys, back to my favorite subject so I've learn tenses first then try to understand it. that's why my post is very far 
+                from grammar rules so please understand hehehe </p>
+                <br>
+            <h2>My 8<sup>th</sup> Lesson In 2022 March 31th </h2>
+            <h5>Korean</h5>
+            <p>Annyeong haseyo yeorobum I'm still learn in Korean Hangul like trying to write any word in Korean alphabet. It's so much fun!!!</p>
+                <br>
+            <h2>My 9<sup>th</sup> Lesson In 2022 April 1st </h2>
+            <h5>Website</h5>
+            <p>Hi guys, back to the main lesson again so after make a basic form I'm combine with navbar and footer
+               also a content of my basic web!!!</p>
+                <br>
+            <h2>My 10<sup>th</sup> Lesson In 2022 April 2nd </h2>
+            <h5>Design</h5>
+            <p>hi guys, after learn make shapes and colors I'm try to make a interface of website, it's hard but it's so much fun too. 
+                by the way I use Figma app</p>
+                <br>
+            <h2>My 11<sup>th</sup> Lesson In 2022 April 3rd </h2>
+            <h5>Website</h5>
+            <p>Hi guys,In the previous website lesson, I just learned to make a simple website using HTml and today I'm learning basic php,
+                so for Mr. Hendri I apologize profusely for not doing the task perfectly because I am learning website from the basics again, especially for php.</p>
+                <br>
+            <h2>My 12<sup>th</sup> Lesson In 2022 April 4th </h2>
+            <h5>Design</h5>
+            <p>hi guys, I'm practice making the interface of any websites that I see to get used to the interface of my web design in general.</p>
+                <br>
+            <h2>My 13<sup>th</sup> Lesson In 2022 April 5th </h2>
+            <h5>Website</h5>
+            <p>Hi guys, after make a basic design I'm try to hosting my website in a free web hostinger. Just it for now and I'm still learning and trying to become a good habit,
+                wish me luck!!! </p>
+                <br>
+            <h2>My 14<sup>th</sup> Lesson In 2022 April 6th </h2>
+            <h5>Design</h5>
+            <p>hi guys, after making interface of websites I'm trying to make my own web Design even though I saw other people's designs,
+                 I tried to modify it little by little by making it a design reference.Thanks for your attention Finally 
+                I did it although it's really far from perfect task but again Thank youu!!! </p>
+                <br>
+        <div class="comment-box">
+            <h3>Leave a comment</h3>
+
+            <form class="comment-form">
+                <input type="text" placeholder="Enter Name">
+                <input type="email" placeholder="Enter Email">
+                <textarea  rows="5" placeholder="Your comment"></textarea>
+                <button type="submit" class="button1 green-btn">POST COMMENT</button>
+
+            </form>        
+        </div>  
+    </div>
+        
+        <div class="blog-right">
+            <h3>Category</h3>
+            <div>
+                <span>Website</span>
+                <span>5</span>
+            </div>
+            <div>
+                <span>Design</span>
+                <span>5</span>
+            </div>
+            <div>
+                <span>English</span>
+                <span>2</span>
+            </div>
+            <div>
+                <span>Korean</span>
+                <span>2</span>
+            </div>
+        </div>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Dear Diary</p>
+</section>
+</body>
+</html>
